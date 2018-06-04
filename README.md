@@ -4,21 +4,21 @@
 Docker is a manager of container.
 Container:
 <div align="center">
-	<img width="100%" src="container.png" alt="container"</img>
+	<img width="80%" src="container.png" alt="container"</img>
 </div>
 •	Isolates app from each other
 •	Shares the same kernel – kernel shares resources with the host and interacts with the containers
 
-<div>
-	<img width="25%" src="dockervsvm.png" alt="container"</img>
+<div align="center">
+	<img width="80%" src="dockervsvm.png" alt="container"</img>
 </div>
 Advantages
 •	Quicker to launch (no os to boot)
 •	Portability (less dependencies between processed layers)
 •	Efficiency
 
-<div>
-	<img width="25%" src="overview.png" alt="container"</img>
+<div align="center">
+	<img width="80%" src="overview.png" alt="container"</img>
 </div>	
  
 ## II.	Run a container
@@ -47,8 +47,8 @@ Commands:
 
 Example 
 
-<div>
-	<img width="25%" src="code.png" alt="container"</img>
+<div align="center">
+	<img width="80%" src="code.png" alt="container"</img>
 </div>
 2.	Add dependencies by creating reauirements.txt
 3.	Build your image: docker build –t <nom> .
