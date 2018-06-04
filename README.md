@@ -36,7 +36,7 @@ Advantages
 ## III.	Build your own container
 1.	Create a directory
 Commands:
-
+|INSTRUCTION | SIGNIFICATION |
 |:---------|--------------------------------------------:|
 |FROM |	Set base image|
 |LABEL	| Add metadata|
@@ -60,9 +60,6 @@ Example
 ## IV.	Exercise
 1.	Create a directory
 2.	Create your Dockerfile in this new directory.
-
-    Première ligne de code
-    Deuxième ligne
 
     FROM ubuntu:latest
     RUN apt-get update && apt-get install -y python3 \
