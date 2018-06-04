@@ -46,7 +46,7 @@ Advantages
 Commands:
 
 |INSTRUCTION | SIGNIFICATION |
-|:-----------|--------------------------------------------:|
+|:-----------|:--------------------------------------------|
 |FROM |	Set base image|
 |LABEL	| Add metadata|
 |COPY	| Copy files/directories into the image|
