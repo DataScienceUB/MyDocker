@@ -2,19 +2,26 @@
 
 ## I.	What is Docker
 Docker is a manager of container.
+
 Container:
 <div align="center">
 	<img width="80%" src="container.png" alt="container"</img>
 </div>
+
 •	Isolates app from each other
+
 •	Shares the same kernel – kernel shares resources with the host and interacts with the containers
 
 <div align="center">
 	<img width="80%" src="dockervsvm.png" alt="container"</img>
 </div>
+
 Advantages
+
 •	Quicker to launch (no os to boot)
+
 •	Portability (less dependencies between processed layers)
+
 •	Efficiency
 
 <div align="center">
@@ -35,9 +42,10 @@ Advantages
 
 ## III.	Build your own container
 1.	Create a directory
+
 Commands:
 |INSTRUCTION | SIGNIFICATION |
-|:---------|--------------------------------------------:|
+|:-----------|--------------------------------------------:|
 |FROM |	Set base image|
 |LABEL	| Add metadata|
 |COPY	| Copy files/directories into the image|
@@ -52,6 +60,7 @@ Example
 <div align="center">
 	<img width="80%" src="code.png" alt="container"</img>
 </div>
+
 2.	Add dependencies by creating reauirements.txt
 3.	Build your image:    docker build –t <nom> .
 4.	Create the container:    docker run <nom>
