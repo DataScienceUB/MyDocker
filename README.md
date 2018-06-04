@@ -84,7 +84,7 @@ Example
     
     WORKDIR /home/jupyter
     COPY success.txt .
-    ENTRYPOINT ["jupyter", "notebook", "--ip=*"]´
+    ENTRYPOINT ["jupyter", "notebook", "--ip=*"]
 
 3.	Create requirements.txt with Tensorflow, Keras.
 4.	Create success.txt
