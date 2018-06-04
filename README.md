@@ -37,6 +37,7 @@ Advantages
 1.	Create a directory
 Commands:
 |FROM |	Set base image|
+|:---------|--------------------------------------------:|
 |LABEL	| Add metadata|
 |COPY	| Copy files/directories into the image|
 |ENV	| Set environment variable|
@@ -51,27 +52,27 @@ Example
 	<img width="80%" src="code.png" alt="container"</img>
 </div>
 2.	Add dependencies by creating reauirements.txt
-3.	Build your image: docker build –t <nom> .
-4.	Create the container: docker run <nom>
-5.	Upload to docker hub: docker login then docker push <image>
+3.	Build your image:    docker build –t <nom> .
+4.	Create the container:    docker run <nom>
+5.	Upload to docker hub:    docker login then docker push <image>
 
 ## IV.	Exercise
 1.	Create a directory
 2.	Create your Dockerfile in this new directory.
-`FROM ubuntu:latest
-RUN apt-get update && apt-get install -y python3 \
-    python3-pip
-COPY requirements.txt .
+    FROM ubuntu:latest
+    RUN apt-get update && apt-get install -y python3 \
+        python3-pip
+    COPY requirements.txt .
 
-RUN pip3 install jupyter
-RUN pip3 install -r requirements.txt
-RUN useradd -ms /bin/bash jupyter
-
-USER jupyter
-
-WORKDIR /home/jupyter
-COPY success.txt .
-ENTRYPOINT ["jupyter", "notebook", "--ip=*"]´
+    RUN pip3 install jupyter
+    RUN pip3 install -r requirements.txt
+    RUN useradd -ms /bin/bash jupyter
+    
+    USER jupyter
+    
+    WORKDIR /home/jupyter
+    COPY success.txt .
+    ENTRYPOINT ["jupyter", "notebook", "--ip=*"]´
 
 3.	Create requirements.txt with Tensorflow, Keras.
 4.	Create success.txt
