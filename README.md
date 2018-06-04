@@ -44,6 +44,7 @@ Advantages
 1.	Create a directory
 
 Commands:
+
 |INSTRUCTION | SIGNIFICATION |
 |:-----------|--------------------------------------------:|
 |FROM |	Set base image|
