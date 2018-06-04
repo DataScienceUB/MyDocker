@@ -37,10 +37,8 @@ Advantages
 1.	Create a directory
 Commands:
 
-
-
-|FROM |	Set base image|
 |:---------|--------------------------------------------:|
+|FROM |	Set base image|
 |LABEL	| Add metadata|
 |COPY	| Copy files/directories into the image|
 |ENV	| Set environment variable|
@@ -62,6 +60,9 @@ Example
 ## IV.	Exercise
 1.	Create a directory
 2.	Create your Dockerfile in this new directory.
+
+    Première ligne de code
+    Deuxième ligne
 
     FROM ubuntu:latest
     RUN apt-get update && apt-get install -y python3 \
