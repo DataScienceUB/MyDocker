@@ -3,7 +3,7 @@
 ## I.	What is Docker
 Docker is a manager of container.
 Container:
-<img width="25%" src="images\container.png" alt="container"</img>
+<img width="25%" src="container.png" alt="container"</img>
 
 •	Isolates app from each other
 •	Shares the same kernel – kernel shares resources with the host and interacts with the containers
