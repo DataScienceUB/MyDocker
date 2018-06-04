@@ -8,14 +8,18 @@ Container:
 </div>
 •	Isolates app from each other
 •	Shares the same kernel – kernel shares resources with the host and interacts with the containers
-![dockervsvm](D:\Usuarios\becaris\claire\dockervsvm.png)
+
+<div>
+	<img width="25%" src="dockervsvm.png" alt="container"</img>
+</div>
 Advantages
 •	Quicker to launch (no os to boot)
 •	Portability (less dependencies between processed layers)
 •	Efficiency
 
-![overview](D:\Usuarios\becaris\claire\overview.png)
-	
+<div>
+	<img width="25%" src="overview.png" alt="container"</img>
+</div>	
  
 ## II.	Run a container
 
@@ -42,7 +46,10 @@ Commands:
 |CMD	| Provide default for executing container|
 
 Example 
-![code](D:\Usuarios\becaris\claire\code.png)
+
+<div>
+	<img width="25%" src="code.png" alt="container"</img>
+</div>
 2.	Add dependencies by creating reauirements.txt
 3.	Build your image: docker build –t <nom> .
 4.	Create the container: docker run <nom>
