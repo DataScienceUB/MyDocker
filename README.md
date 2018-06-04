@@ -91,4 +91,4 @@ Example
 5.	Build your image: docker build -t jupyter .
 6.	Get your image id: docker images
 7.	Create a new container: docker run -it -p 8888:8888 <image_id> /home
-
+8.	Consulte the results on your browser
