@@ -2,8 +2,9 @@
 
 ## I.	What is Docker
 Docker is a manager of container.
-Container: 
-![container](D:\Usuarios\becaris\claire\container.png)
+Container:
+<img width="25%" src="D:\Usuarios\becaris\claire\container.png" alt="container"</img>
+
 •	Isolates app from each other
 •	Shares the same kernel – kernel shares resources with the host and interacts with the containers
 ![dockervsvm](D:\Usuarios\becaris\claire\dockervsvm.png)
