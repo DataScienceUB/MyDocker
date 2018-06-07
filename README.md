@@ -42,6 +42,7 @@ Advantages
 
 ## III.	Build your own container
 1.	Create a directory
+2.	Create your Dockerfile
 
 Commands:
 
@@ -62,28 +63,34 @@ Example
 	<img width="80%" src="code.png" alt="container"</img>
 </div>
 
-2.	Add dependencies by creating reauirements.txt
-3.	Build your image:    docker build –t <nom> .
-4.	Create the container:    docker run <nom>
-5.	Upload to docker hub:    docker login then docker push <image>
+3.	Add dependencies by creating reauirements.txt
+4.	Build your image:    docker build –t <nom> .
+5.	Create the container:    docker run <nom>
+6.	Upload to docker hub:    docker login then docker push <image>
 
 ## IV.	Exercise
 1.	Create a directory
 2.	Create your Dockerfile in this new directory.
 
     FROM ubuntu:latest
+    
     RUN apt-get update && apt-get install -y python3 \
         python3-pip
+    
     COPY requirements.txt .
 
     RUN pip3 install jupyter
+    
     RUN pip3 install -r requirements.txt
+    
     RUN useradd -ms /bin/bash jupyter
     
     USER jupyter
     
     WORKDIR /home/jupyter
+    
     COPY success.txt .
+    
     ENTRYPOINT ["jupyter", "notebook", "--ip=*"]
 
 3.	Create requirements.txt with Tensorflow, Keras.
