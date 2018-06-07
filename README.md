@@ -42,6 +42,7 @@ Advantages
 	
 	|INSTRUCTION | SIGNIFICATION |
 	|:-----------|:--------------------------------------------|
+	|-i|Interactive mode|
 	|-p|Publish a container᾿s port or a range of ports to the host format (-p 8888:4000)|
 	|-t|Allocate a pseudo-tty|
 	|-v path/to/volume|Bind mount a volume|
