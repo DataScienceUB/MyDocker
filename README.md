@@ -2,7 +2,7 @@
 
 ## Problemática
 
-1. If 2 personnes work on the same project but with 2 different environments, there may be dependency version issues.
+1. If 2 people are working on the same project but with 2 different environments, there may be dependency version issues.
 2. Some packages are optimize for a special OS.
 
 ## I.	What is Docker
