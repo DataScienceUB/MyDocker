@@ -39,11 +39,13 @@ Advantages
 2.	Check the image: docker images
 3.	Create a container: docker run –it <nom>
 	Few options:
+	
 	|INSTRUCTION | SIGNIFICATION |
 	|:-----------|:--------------------------------------------|
 	|-p|Publish a container᾿s port or a range of ports to the host format (-p 8888:4000)|
 	|-t|Allocate a pseudo-tty|
 	|-v path/to/volume|Bind mount a volume|
+	
 4.	Stop the container: docker stop <id container>
 5.	Interact with a container with shell: docker run –it <nom container> /bin/bash
 6.	Stop the container
