@@ -1,5 +1,10 @@
 # MyDocker: How to build and use a Docker image for Deep Learning development.
 
+## Problemática
+
+1. If 2 personnes work on the same project but with 2 different environments, there may be dependency version issues.
+2. Some packages are optimize for a special OS.
+
 ## I.	What is Docker
 Docker is a manager of container.
 
@@ -33,6 +38,12 @@ Advantages
 1.	Pull an image from Docker hub: docker login then docker pull <image>
 2.	Check the image: docker images
 3.	Create a container: docker run –it <nom>
+	Few options:
+	|INSTRUCTION | SIGNIFICATION |
+	|:-----------|:--------------------------------------------|
+	|-p|Publish a container᾿s port or a range of ports to the host format (-p 8888:4000)|
+	|-t|Allocate a pseudo-tty|
+	|-v path/to/volume|Bind mount a volume|
 4.	Stop the container: docker stop <id container>
 5.	Interact with a container with shell: docker run –it <nom container> /bin/bash
 6.	Stop the container
@@ -52,6 +63,7 @@ Commands:
 |LABEL	| Add metadata|
 |COPY	| Copy files/directories into the image|
 |ENV	| Set environment variable|
+|EXPORT |
 |WORKDIR |	Set working directory|
 |RUN	| Execute shell commands in a new layer|
 |ENTRYPOINT |	Configure container to run as executable|
@@ -63,7 +75,7 @@ Example
 	<img width="80%" src="code.png" alt="container"</img>
 </div>
 
-3.	Add dependencies by creating reauirements.txt
+3.	Add dependencies by creating requirements.txt
 4.	Build your image:    docker build –t <nom> .
 5.	Create the container:    docker run <nom>
 6.	Upload to docker hub:    docker login then docker push <image>
