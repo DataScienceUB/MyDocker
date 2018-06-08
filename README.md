@@ -107,12 +107,12 @@ Example
     
     WORKDIR /home/jupyter
     
-    COPY success.txt .
+    COPY hello_world.txt .
     
     ENTRYPOINT ["jupyter", "notebook", "--ip=*"]
 
 3.	Create requirements.txt with Tensorflow, Keras.
-4.	Create success.txt
+4.	Create hello_world.txt
 5.	Build your image: docker build -t jupyter .
 6.	Get your image id: docker images
 7.	Create a new container: docker run -it -p 8888:8888 image_id /home
