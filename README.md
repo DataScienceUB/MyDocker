@@ -113,6 +113,5 @@ Example
 3.	Create requirements.txt with Tensorflow, Keras.
 4.	Create hello_world.txt
 5.	Build your image: docker build -t jupyter .
-6.	Get your image id: docker images
-7.	Create a new container: docker run -it -p 8888:8888 image_id /home
-8.	Consulte the results on your browser
+6.	Create a new container: docker run -it -p 8888:8888 jupyter /home
+7.	Consulte the results on your browser (you might need to change your ip address)
