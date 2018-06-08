@@ -81,7 +81,10 @@ Example
 3.	Create hello_world.py: print("Hello world!")
 4.	Build your image:    docker build –t nom .
 5.	Create the container:    docker run nom
-6.	Upload to docker hub:    docker login then docker push image
+6.	Upload to docker hub:
+	* docker login
+	* docker tag image username/repository:tag (example: docker tag friendlyhello john/first_docker:test)
+	* docker push username/repository:tag
 
 ## IV.	Exercise
 1.	Create a directory
