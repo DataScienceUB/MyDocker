@@ -37,7 +37,7 @@ Advantages
 
 1.	Pull an image from Docker hub: docker login then docker pull <image>
 2.	Check the image: docker images
-3.	Create a container: docker run –it <nom>
+3.	Create a container: docker run –it nom
 	Few options:
 	
 	|INSTRUCTION | SIGNIFICATION |
@@ -47,11 +47,11 @@ Advantages
 	|-t|Allocate a pseudo-tty|
 	|-v path/to/volume|Bind mount a volume|
 	
-4.	Stop the container: docker stop <id container>
-5.	Interact with a container with shell: docker run –it <nom container> /bin/bash
+4.	Stop the container: docker stop id container
+5.	Interact with a container with shell: docker run –it nom container /bin/bash
 6.	Stop the container
 7.	Confirm the container has been stop: docker ps –a
-8.	Delete the container: docker rm <id container>
+8.	Delete the container: docker rm id container
 
 
 ## III.	Build your own container
@@ -78,10 +78,10 @@ Example
 	<img width="80%" src="code.png" alt="container"</img>
 </div>
 
-3.	Add dependencies by creating requirements.txt
-4.	Build your image:    docker build –t <nom> .
-5.	Create the container:    docker run <nom>
-6.	Upload to docker hub:    docker login then docker push <image>
+3.	Create hello_world.py: print("Hello world!")
+4.	Build your image:    docker build –t nom .
+5.	Create the container:    docker run nom
+6.	Upload to docker hub:    docker login then docker push image
 
 ## IV.	Exercise
 1.	Create a directory
@@ -112,5 +112,5 @@ Example
 4.	Create success.txt
 5.	Build your image: docker build -t jupyter .
 6.	Get your image id: docker images
-7.	Create a new container: docker run -it -p 8888:8888 <image_id> /home
+7.	Create a new container: docker run -it -p 8888:8888 image_id /home
 8.	Consulte the results on your browser
