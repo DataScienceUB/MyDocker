@@ -66,7 +66,7 @@ Commands:
 |LABEL	| Add metadata|
 |COPY	| Copy files/directories into the image|
 |ENV	| Set environment variable|
-|EXPORT | Informs Docker that the container listens on the specified network ports at runtime|
+|EXPOSE | Informs Docker that the container listens on the specified network ports at runtime|
 |WORKDIR |	Set working directory|
 |RUN	| Execute shell commands in a new layer|
 |ENTRYPOINT |	Configure container to run as executable|
