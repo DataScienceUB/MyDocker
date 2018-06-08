@@ -47,11 +47,12 @@ Advantages
 	|-t|Allocate a pseudo-tty|
 	|-v path/to/volume|Bind mount a volume|
 	
-4.	Stop the container: docker stop id_container
+4.	Stop the container: docker stop id_container nom
 5.	Interact with a container with shell: docker run –it nom_container /bin/bash
-6.	Stop the container
-7.	Confirm the container has been stop: docker ps –a
-8.	Delete the container: docker rm id_container
+6.	Save the container after modification: docker commit id_container nom
+7.	Stop the container
+8.	Confirm the container has been stop: docker ps –a
+9.	Delete the container: docker rm id_container
 
 
 ## III.	Build your own container
